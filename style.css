@@ -8,3 +8,48 @@ body {
 
 /* ---------------------------------------------------- */
 
+
+.kalendar {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(7, 50px);
+	grid-template-rows: repeat(6, 50px);
+	gap: 3px;
+	list-style: none;
+}
+
+.kalendar li {
+	border: 1px solid silver;
+
+	/* text-align: center;
+	line-height: 48px; */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.kalendar li button {
+	font-size: inherit;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.kalendar li button:hover,
+.kalendar li button:focus {
+	background-color: #ececec;
+}
+
+.zahlavi {
+	background-color: tomato;
+	color: white;
+}
+
+.predchozi,
+.nasledujici {
+	background-color: silver;
+}
